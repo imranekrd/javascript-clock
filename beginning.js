@@ -1,6 +1,6 @@
 function displayTime() {
     var date = new Date();
-    var hours = date.getHours();
+    var hours = String(date.getHours()).padStart(2,'0');
     //padstart will add leading zero.  
     var minutes = String(date.getMinutes()).padStart(2,'0');
     var seconds = String(date.getSeconds()).padStart(2,'0');
